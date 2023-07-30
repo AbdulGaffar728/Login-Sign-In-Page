@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign-In Page</title>
+    <title>Sign-Up Page</title>
 </head>
 <body>
      <div class="Login">
-         <h2>Sign-In</h2>
-         <div class="Input">
-             <form action="JavaScript:void(0)" method="get">
-                <p>User Email:</p><input type="email" name="UsrName"  id="UsrNam">
-                <p>Password:</p><input type="password" name="Password"  id="UsrPas">
-                <p>Confirm Password:</p><input type="password" name="CnfmPassword"  id="UsrCPas">
-                <p><input type="submit" id="Submit" value="Sign-In"></p>
-            </form>
-         </div>
-         <div id="last">
+         <h2>Sign-Up</h2>
          <h3>Welcome To SkyHub</h3>
-         <a href="index.html">Have an account?</a>
-         </div>    
+             <form action="JavaScript:void(0)" method="get">
+                <p>User Email:</p><input type="email" name="UsrEmail"  id="UserEmail">
+                <p>User Name:</p><input type="text" name="userName" id="userName">
+                <p>Password:</p><input type="password" name="Password"  id="UserPassword">
+                <p>Confirm Password:</p><input type="password" name="CnfmPassword"  id="ConfirmPassword">
+                <p><input type="submit" id="Submit" value="Sign-Up" onClick="Submitting()"></p>
+            </form>
+         <a href="index.html">Have an account?</a>    
     </div>
     <style>
     #Submit{
         background-color: black;
         color: white;
-        font-size: 17px;
+        font-size: 15px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        height: 30px;
+        height: 25px;
     } 
     input{
          padding-left: 5px;
          color: blue;
-         height: 20px;
+         height: 17px;
          width: 200px;
          border-radius: 25px;
     }
@@ -40,8 +37,9 @@
           text-decoration: none;
           color: red;
         }
-        #last{
-            margin-bottom: 5px;
+        h3{
+            margin: 5px 0px;
+            color: skyblue;
         }
     body{
         background-image: url(Sign-In.jpg);
@@ -49,7 +47,7 @@
         color: white;
     }
     .Login{
-        background-color: rgba(171, 186, 177, 0.583) ;
+        background-color: rgba(171, 186, 177, 0.5) ;
         border-radius: 8%;
         width: 40%;
         height: 70%;
@@ -64,5 +62,6 @@
         justify-content:center;
     }
     </style>
+    <script src="JS/Sign-Up.js"></script>
 </body>
 </html>
