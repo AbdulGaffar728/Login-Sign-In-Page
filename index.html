@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+     <div class="Login">
+         <h2>Login</h2>
+         <div class="Input">
+             <form action="localStorage.getItem()" method="get">
+                <p>User Email:</p><input type="email" name="UsrName"  id="UsrNam">
+                <p>Password:</p><input type="password" name="UsrPassword"  id="UsrPas">
+                <p><input type="submit" id="Submit" value="Login"></p>
+            </form>
+         </div>
+         <div id="last">
+         <h3> Welcome To SkyHub</h3>
+         <a href="Sign-In.html">Didn't have an account</a>
+         </div>    
+    </div>
+    <style>
+        #last{
+            margin-bottom: 25px;
+        }
+    #Submit{
+        background-color: black;
+        color: white;
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin:18px 0px;
+        height: 30px;
+    } 
+    input{
+         padding: 6px 0px;
+         color: blue;
+         height: 20px;
+         width: 200px;
+         border-radius: 25px;
+    }
+    a{    
+          font-size: 20px;
+          text-decoration: none;
+          color: red;
+        }
+    body{
+        background-image: url(Login_Page.webp);
+        background-size: 100%;
+        color: white;
+    }
+    .Login{
+        background-color: rgba(41, 56, 56, 0.5) ;
+        border-radius: 8%;
+        width: 40%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    </style>
+</body>
+</html>
