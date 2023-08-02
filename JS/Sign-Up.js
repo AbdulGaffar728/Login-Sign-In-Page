@@ -7,17 +7,19 @@ var Users=[];
         if(Password==="" || ConfirmPassword === "" || UserName=== ""){
          alert("Please fill all fields.")
         }
-        else if(Password===ConfirmPassword && UserName!=""){
+        else if(Password===ConfirmPassword && UserName!==""){
             var UsrData={
             userEmail:UserEmail,
             password:Password,
             userName:UserName
            }
+        
         Users.push(UsrData)
+        
         localStorage.setItem("User",JSON.stringify(Users));
-        // console.log(JSON.parse(localStorage.getItem("User")));
         window.location.href="http://127.0.0.1:5500/index.html";
         }
+
         else{
             alert("Both passwords are not same.")     
         }

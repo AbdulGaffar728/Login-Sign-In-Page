@@ -8,22 +8,21 @@
          <h2>Login</h2>
          <div class="Input">
              <form action="JavaScript:void(0)" method="get">
-                <p>User Email:</p><input type="email" name="UsrEmail" id="UsrEmail">
-                <p>Password:</p><input type="password" name="UsrPassword"  id="UsrPas">
-                <p><input type="submit" id="Submit" value="Login"></p>
+                <p>User Email:</p><input type="email" name="UsrEmail" id="UserEmail">
+                <p>Password:</p><input type="password" name="UsrPassword"  id="Password">
+                <p><input type="submit" id="Login" value="Login" onClick="LoggingIn()"></p>
             </form>
          </div>
          <div id="last">
          <h3> Welcome To SkyHub</h3>
          <a href="Sign-Up.html">Didn't have an account?</a>
          </div>    
-    </div>
-   
+    </div>   
     <style>
-        #last{
+#last{
             margin-bottom: 25px;
         }
-    #Submit{
+    #Login{
         background-color: black;
         color: white;
         font-size: 17px;
@@ -64,5 +63,6 @@
         justify-content:center;
     }
     </style>
+    <script src="JS/Login.js"></script>
 </body>
 </html>
