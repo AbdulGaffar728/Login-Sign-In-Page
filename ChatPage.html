@@ -12,7 +12,61 @@
        <div class="HeadChild" ><img src="Img/Img1.png" alt="Img" id="slidingImage"></div>
        <div class="HeadChild" >SkyHub <br/> Network</div>
     </div>
+    <div id="ChatBody">
+
+    </div>
+    <div id="InputField">
+      <input type="text" id="UserMessage"/>
+      <button onClick="SendingMessage()">Send</button>
+    </div>
     <style>
+      .Time{
+        margin-left: 89%;
+        color: gold;
+      }
+      .NameOfUser{
+        color:gold;
+      }
+      .ChatBox{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: 2px solid goldenrod;
+        background-color: rgb(125, 117, 117);
+        border-radius: 25px;
+        color: white;
+        padding: 5px;
+      }
+      #ChatBody{
+        padding-bottom: 60px;
+      }
+      #InputField{
+        display: flex;
+        height: 10%;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        padding: 5px;
+
+      }
+      #UserMessage{
+        width: 90%;
+        background-color: slategray;
+        border: 3px solid rgb(60, 81, 102);
+        border-radius: 25px;
+        color: white;
+      }
+      button{
+        width: 9%;
+        background-color: rgb(6, 60, 113);
+        border: 2px solid rgb(60, 81, 102);
+        border-radius: 25px;
+        color: white;
+        font-size: large;
+      }
       .HeadChild,#Head{
           display: flex;
           align-items: center;
@@ -33,7 +87,7 @@
 
       }
     </style>
-    <script src="JS/Login.js">
-    </script>
+    <script src="JS/Login.js"></script>
+    <script src="JS/ChatPage.js"></script>
 </body>
 </html>

@@ -13,11 +13,17 @@ var Users=[];
             password:Password,
             userName:UserName
            }
-        
+        var Local=localStorage.getItem("User")
+        if(Local===null){
+            Users=[]
+        }
+        else{
+          Users=JSON.parse(Local)
+        }
         Users.push(UsrData)
         
         localStorage.setItem("User",JSON.stringify(Users));
-        window.location.href="http://127.0.0.1:5500/index.html";
+        window.location.href="index.html";
         }
 
         else{
