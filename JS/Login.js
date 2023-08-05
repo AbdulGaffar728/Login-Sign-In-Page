@@ -7,11 +7,11 @@ function LoggingIn(){
     if(UsersDetail===null){
         alert("Please Sign-Up first.")
     }
+    else{
     for(var i=0 ; i<(UsersDetail.length) ; i++){
         if(UserEmail===UsersDetail[i].userEmail){
             if(Password===UsersDetail[i].password){
-            //   alert("logged in successfully.")
-              j=i;
+         j=i;
               window.location.href="ChatPage.html"
               break;
             }
@@ -19,13 +19,13 @@ function LoggingIn(){
        if(i===(UsersDetail.length-1)){
           alert("Email or Password or Both are invalid.")
         }
+      }
     }
 }
         // ChatPageJavaScript
 
         var usersFromStorage=JSON.parse(localStorage.getItem("User"))
         var userName=usersFromStorage[j].userName;
-        console.log(usersFromStorage)
         document.getElementById("name").innerHTML=userName;
 
         var k=1
@@ -37,7 +37,6 @@ function changeImage(){
  if(k===4){
      k=0
  }
- 
 }
 
 var MessagesDetail=[]
@@ -47,11 +46,16 @@ function SendingMessage(){
 
    }
    else{
-    var currentMinutes=new Date().getMinutes()
+    var timeNow=new Date()
+    var currentMinutes=timeNow.getMinutes()
     var Minutes=("0" + currentMinutes).slice(-2)
-    var currentHours=new Date().getHours()
+    var currentHours=timeNow.getHours()
     var Hours=("0" + currentHours).slice(-2)
-    var currentTime=Hours + ":" + Minutes;
+    var currentDay=timeNow.getDate()
+    var currentMonth=timeNow.getMonth()
+    var currentYear=timeNow.getFullYear()
+    var Months=["January","February","March","April","May","June","July","August","September","October","November","December"]
+    var currentTime=Months[currentMonth] + " " + currentDay + "," + currentYear + "  " + Hours + ":" + Minutes;
 
 
  var MessageDetail={
@@ -96,7 +100,10 @@ function SendingMessage(){
   }  
 }
 var GettingMessages=JSON.parse(localStorage.getItem("Messages"))
+if(GettingMessages===null){
 
+}
+else{
 for(var a=0 ; a<(GettingMessages.length) ; a++){
 
   var parentBox=document.getElementById("ChatBody")
@@ -121,3 +128,4 @@ for(var a=0 ; a<(GettingMessages.length) ; a++){
    sendingTime.className="Time"
    
   }  
+}
