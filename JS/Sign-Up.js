@@ -31,4 +31,3 @@ var Users=[];
         }
     }
     
-         console.log(Users)

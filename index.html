@@ -10,48 +10,113 @@
              <form action="JavaScript:void(0)" method="get">
                 <p>User Email:</p><input type="email" name="UsrEmail" id="UserEmail">
                 <p>Password:</p><input type="password" name="UsrPassword"  id="Password">
-                <p><input type="submit" id="Login" value="Login" onClick="LoggingIn()"></p>
+                <p><input type="submit" id="Login" value="Login"  onClick="LoggingIn()"></p>
             </form>
          </div>
          <div id="last">
-         <h3> Welcome To SkyHub</h3>
+         <h3> Welcome To <b>Sky</b>Hub</h3>
          <a href="Sign-Up.html">Didn't have an account?</a>
          </div>    
     </div>   
     <style>
-#last{
-            margin-bottom: 25px;
+        @media(max-width:491px){
+            #last{
+         margin-bottom: 20px;
         }
     #Login{
-        background-color: black;
-        color: white;
         font-size: 17px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin:18px 0px;
         height: 30px;
     } 
     input{
          padding-left:6px;
-         color: blue;
          height: 20px;
          width: 200px;
          border-radius: 25px;
     }
-    a{    
-          font-size: 20px;
+    .Login{
+        width: 40%;
+        height: 70%;
+    }
+    
+        }
+        @media(min-width:492px) and (max-width:1023px){
+            #last{
+            margin-bottom: 30px;
+        }
+    #Login{
+        font-size: 20px;
+        margin:auto;
+        height: 30px;
+    } 
+    input{
+         padding-left:10px;
+         height: 25px;
+         width: 220px;
+         border-radius: 25px;
+    }
+    .Login{
+        width: 35%;
+        height: 70%;
+    }
+               }
+        @media(min-width:1024px){
+            #last{
+            margin-bottom: 50px;
+        }
+    #Login{
+        font-size: 25px;
+        margin:18px 0px;
+        height: 35px;
+        width: 270px;
+    } 
+    input{
+         padding-left:13px;
+         height: 28px;
+         width: 250px;
+         border-radius: 25px;
+    }
+    .Login{
+        font-size: 130%;
+        width: 30%;
+        height: 70%;
+    }
+    
+        }
+/* CSS */
+h2{
+    color: gold;
+}
+b{
+    color: skyblue;
+}
+    #Login{
+  
+        background-color: black;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    } 
+    input{
+         color: blue;
+    }
+    a{ 
+          font-size: 100%;   
           text-decoration: none;
           color: red;
         }
     body{
+        height: 100%;
+        width: 100%;
         background-image: url(Login_Page.webp);
-        background-size: 100%;
         color: white;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .Login{
-        background-color: rgba(41, 56, 56, 0.5) ;
         border-radius: 8%;
-        width: 40%;
-        height: 70%;
+        background-color: rgba(41, 56, 56, 0.5) ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,6 +127,7 @@
         align-items: center;
         justify-content:center;
     }
+    
     </style>
     <script src="JS/Login.js"></script>
     
