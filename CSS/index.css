@@ -1,0 +1,108 @@
+@media(max-width:491px){
+    #last{
+ margin-bottom: 20px;
+}
+#Login{
+font-size: 17px;
+margin:18px 0px;
+height: 30px;
+} 
+input{
+ padding-left:6px;
+ height: 20px;
+ width: 200px;
+ border-radius: 25px;
+}
+.Login{
+width: 320px;
+height: 390px;
+}
+
+}
+@media(min-width:492px) and (max-width:1023px){
+    #last{
+    margin-bottom: 30px;
+}
+#Login{
+font-size: 20px;
+margin:auto;
+height: 30px;
+} 
+input{
+ padding-left:10px;
+ height: 25px;
+ width: 220px;
+ border-radius: 25px;
+}
+.Login{
+width: 350px;
+height: 430px;
+}
+       }
+@media(min-width:1024px){
+    #last{
+    margin-bottom: 50px;
+}
+#Login{
+font-size: 25px;
+margin:18px 0px;
+height: 35px;
+width: 270px;
+} 
+input{
+ padding-left:13px;
+ height: 28px;
+ width: 250px;
+ border-radius: 25px;
+}
+.Login{
+font-size: 130%;
+width: 400px;
+height: 550px;
+}
+
+}
+/* CSS */
+h2{
+color: gold;
+}
+b{
+color: skyblue;
+}
+#Login{
+
+background-color: black;
+color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+input{
+ color: blue;
+}
+a{ 
+  font-size: 100%;   
+  text-decoration: none;
+  color: red;
+}
+body{
+height: 100%;
+width: 100%;
+background-image: url(Login_Page.webp);
+color: white;
+background-size: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Login{
+border-radius: 8%;
+background-color: rgba(41, 56, 56, 0.5) ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+body{
+display: flex;
+align-items: center;
+justify-content:center;
+}
